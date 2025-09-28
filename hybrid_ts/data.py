@@ -1,5 +1,5 @@
 """Compatibility layer to keep notebook imports stable."""
 
-from Data.data import get_benchmark_prices  # re-export for notebooks expecting the new package layout
+from Data.data import PriceRequest, get_benchmark_prices, load_prices
 
-__all__ = ["get_benchmark_prices"]
+__all__ = ["PriceRequest", "get_benchmark_prices", "load_prices"]
